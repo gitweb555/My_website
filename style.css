@@ -1,0 +1,60 @@
+/* style.css */
+
+/* Basic styling for the entire page */
+body {
+  font-family: Arial, sans-serif;  /* Sets the font of the whole page */
+  margin: 0;                      /* Removes default margin */
+  padding: 0;                     /* Removes default padding */
+  background-color: #f4f4f4;      /* Light gray background */
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;      /* Green background for the header */
+  color: white;                   /* White text color */
+  text-align: center;              /* Centers the text horizontally */
+  padding: 20px;                   /* Adds space around the header text */
+}
+
+/* Styling for the main content */
+.content {
+  padding: 20px;                  /* Adds padding inside the content section */
+  background-color: white;        /* White background for content */
+  max-width: 800px;                /* Maximum width for the content */
+  margin: 20px auto;               /* Centers the content with space on top and bottom */
+  border-radius: 8px;              /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Styling for headings in the content section */
+.content h2 {
+  color: #333;                    /* Dark gray color for headings */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;         /* Dark gray background for the footer */
+  color: white;                   /* White text color */
+  text-align: center;              /* Centers the footer text */
+  padding: 10px 0;                 /* Adds padding to top and bottom of the footer */
+  position: fixed;                 /* Keeps footer at the bottom of the page */
+  bottom: 0;
+  width: 100%;                     /* Makes the footer stretch across the entire page */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust the content padding and text size for smaller screens */
+  body {
+    font-size: 14px;               /* Smaller font size on mobile */
+  }
+
+  header {
+    padding: 10px;                 /* Less padding in the header on small screens */
+  }
+
+  .content {
+    padding: 15px;                 /* Less padding in content */
+    margin: 10px;                  /* Reduced margin on smaller screens */
+  }
+}
