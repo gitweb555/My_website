@@ -99,19 +99,3 @@
         }
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-  /* Adjust the content padding and text size for smaller screens */
-  body {
-    font-size: 14px;               /* Smaller font size on mobile */
-  }
-
-  header {
-    padding: 10px;                 /* Less padding in the header on small screens */
-  }
-
-  .content {
-    padding: 15px;                 /* Less padding in content */
-    margin: 10px;                  /* Reduced margin on smaller screens */
-  }
-}
