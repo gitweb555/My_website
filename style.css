@@ -1,45 +1,102 @@
-/* style.css */
+/* style.css *
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-top: 80px; /* Add padding to prevent content from being hidden behind the fixed header */
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #a2a5cb;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000; /* Ensure header stays above other content */
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+            position: fixed;
+            top: 60px; /* Position the navigation below the header */
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .property-listing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .property {
+            width: 30%;
+            margin: 15px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .property img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .property h3 {
+            color: #2c3e50;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #1abc9c;
+        }
 
-/* Basic styling for the entire page */
-body {
-  font-family: Arial, sans-serif;  /* Sets the font of the whole page */
-  margin: 0;                      /* Removes default margin */
-  padding: 0;                     /* Removes default padding */
-  background-color: #f4f4f4;      /* Light gray background */
-}
-
-/* Header styles */
-header {
-  background-color: #4CAF50;      /* Green background for the header */
-  color: white;                   /* White text color */
-  text-align: center;              /* Centers the text horizontally */
-  padding: 20px;                   /* Adds space around the header text */
-}
-
-/* Styling for the main content */
-.content {
-  padding: 20px;                  /* Adds padding inside the content section */
-  background-color: white;        /* White background for content */
-  max-width: 800px;                /* Maximum width for the content */
-  margin: 20px auto;               /* Centers the content with space on top and bottom */
-  border-radius: 8px;              /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-}
-
-/* Styling for headings in the content section */
-.content h2 {
-  color: #333;                    /* Dark gray color for headings */
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;         /* Dark gray background for the footer */
-  color: white;                   /* White text color */
-  text-align: center;              /* Centers the footer text */
-  padding: 10px 0;                 /* Adds padding to top and bottom of the footer */
-  position: fixed;                 /* Keeps footer at the bottom of the page */
-  bottom: 0;
-  width: 100%;                     /* Makes the footer stretch across the entire page */
+        /* Profile Picture Styling */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .profile-info {
+            max-width: 600px;
+        }
 }
 
 /* Media query for mobile devices */
