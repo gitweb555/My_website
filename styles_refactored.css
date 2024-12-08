@@ -1,5 +1,6 @@
 
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -124,3 +125,79 @@ section {
 p {
     font-size: 1.2rem; /* Same as the root font size */
 }
+
+@media only screen and (max-width: 767px) {
+   
+    header h1 {
+        font-size: 60px;
+    }
+
+    .property {
+        display: block; /* Stack the divs vertically on mobile */
+        padding: 10px;
+        width: 100%; /* Make each box take up full width on mobile */
+        margin-bottom: 15px; /* Add spacing between the stacked boxes */
+        font-size: 40px;
+    }
+
+    .property h3 {
+        line-height: 20%;
+    }
+
+    .property p {
+        font-size: 40px;
+        line-height: 20%;
+    }
+
+    .profile {
+        display: block; /* Stack the image and text vertically on mobile */
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 600px; /* Adjust image size for mobile */
+        height: 600px;
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .profile-info p {
+        width: 100%; /* Make profile-info take almost the full width */
+        margin-top: 30px;
+        text-align: left; /* Align text left for better readability */
+        font-size: 50px; /* Increase text size for mobile */
+    }
+
+    h2  {
+        font-size: 50px;
+    }
+
+    #contact p {
+        font-size: 40px;
+    }
+    
+    .contact-form {
+        padding: 15px; /* Increase padding on mobile to make the form larger */
+        width: 100%; /* Make the form take up the full width of the screen */
+        padding-right: 45px; /* Add extra padding on the right side to avoid being too close to the edge */
+        box-sizing: border-box; /* Ensure padding is included in the element's width */
+    }
+
+    .contact-form input, 
+    .contact-form textarea, 
+    .contact-form button {
+        padding: 15px; /* Increase padding inside form fields for better touch experience */
+        font-size: 18px; /* Increase the font size of text inside inputs and button */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 30px; /* Ensure input text is larger on mobile */
+    }
+
+    .contact-form button {
+        font-size: 30px; /* Make the button text bigger */
+    }
+
+}
+
+
