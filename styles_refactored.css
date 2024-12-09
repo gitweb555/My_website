@@ -1,6 +1,5 @@
 
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,7 +16,7 @@ header {
     left: 0;
     width: 100%;
     background-color: #4B0082;
-    color: white;
+    color: #C6CAE9;
     padding: 20px;
     text-align: center;
     z-index: 1000;
@@ -127,17 +126,37 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-   
-    header h1 {
-        font-size: 60px;
+
+    body {
+        padding-top: 0vw;
+        min-width: 80vw; /* The container will stop shrinking below this width */
     }
 
+    header {
+        padding: 1vw;
+    }
+
+    header h1 {
+        font-size: 5vw;
+    }
+
+    #about {
+        padding-bottom: 4vw;
+        padding-top: 10vw;
+        margin: 0vw;
+    }
+
+    #properties {
+        padding: 0vw;
+    }
+    
     .property {
         display: block; /* Stack the divs vertically on mobile */
-        padding: 10px;
+        padding: 2vw;
         width: 100%; /* Make each box take up full width on mobile */
-        margin-bottom: 15px; /* Add spacing between the stacked boxes */
-        font-size: 40px;
+        height: auto;
+        margin-bottom: 0vw; /* Add spacing between the stacked boxes */
+        font-size: 5vw;
     }
 
     .property h3 {
@@ -145,57 +164,97 @@ p {
     }
 
     .property p {
-        font-size: 40px;
+        font-size: 3.5vw;
         line-height: 20%;
     }
 
     .profile {
         display: block; /* Stack the image and text vertically on mobile */
-        padding: 10px;
+        padding: 0vw;
     }
 
+
     .profile img {
-        width: 600px; /* Adjust image size for mobile */
-        height: 600px;
+        width: 50vw; /* Adjust image size for mobile */
+        height: 50vw;
         margin-bottom: 10px; /* Space between image and text */
+        display: block;
+        margin: 0 auto; /* Horizontally centers the image */
+    }
+
+    .profile-info {
+        max-width: 100%;
+        min-width: 100%;
+        padding-left: 0vw;
     }
 
     .profile-info p {
         width: 100%; /* Make profile-info take almost the full width */
-        margin-top: 30px;
-        text-align: left; /* Align text left for better readability */
-        font-size: 50px; /* Increase text size for mobile */
+        margin-top: 5vw;
+        text-align: justify; /* Align text left for better readability */
+        font-size: 4vw; /* Increase text size for mobile */
     }
 
     h2  {
-        font-size: 50px;
+        font-size: 6vw;
+        padding: 0vw;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 4.5vw;
+    }
+
+    a {
+        font-size: 4vw;
+    }
+
+    .contact-form form input {
+        margin-top: 0vw;
+        margin-bottom: 2vw;
+    }
+
+    #contact_info h2 {
+        padding: 0vw;
+        font-size: 4vw;
+    }
+
+    #contact_info {
+        margin: 0vw;
+    }
+
+    #contact {
+        margin: 0vw;
     }
 
     #contact p {
-        font-size: 40px;
+        font-size: 4vw;
     }
     
     .contact-form {
-        padding: 15px; /* Increase padding on mobile to make the form larger */
+        padding: 0vw; /* Increase padding on mobile to make the form larger */
         width: 100%; /* Make the form take up the full width of the screen */
-        padding-right: 45px; /* Add extra padding on the right side to avoid being too close to the edge */
+        padding-right: 4vw; /* Add extra padding on the right side to avoid being too close to the edge */
         box-sizing: border-box; /* Ensure padding is included in the element's width */
     }
 
     .contact-form input, 
-    .contact-form textarea, 
-    .contact-form button {
-        padding: 15px; /* Increase padding inside form fields for better touch experience */
-        font-size: 18px; /* Increase the font size of text inside inputs and button */
+    .contact-form textarea {
+        padding: 2vw; /* Increase padding inside form fields for better touch experience */
+        font-size: 5vw; /* Increase the font size of text inside inputs and button */
     }
 
     .contact-form input, 
     .contact-form textarea {
-        font-size: 30px; /* Ensure input text is larger on mobile */
+        font-size: 4vw; /* Ensure input text is larger on mobile */
     }
 
     .contact-form button {
-        font-size: 30px; /* Make the button text bigger */
+        padding: 0vw;
+        height: 6vw;
+        width: 25vw;
+        font-size: 3vw; /* Make the button text bigger */
+        text-align: center;
     }
 
 }
