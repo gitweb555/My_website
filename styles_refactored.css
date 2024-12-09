@@ -101,7 +101,7 @@ section {
     background-color: #1abc9c;
 }
 
-.profile {
+.profile, .office {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -115,7 +115,14 @@ section {
     margin-right: 20px;
 }
 
-.profile-info {
+.office img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info, .office-info {
     max-width: 800px;
     min-width: 800px;
     padding-left: 50px;
@@ -140,13 +147,13 @@ p {
         font-size: 5vw;
     }
 
-    #about {
+    #about, #brokerge {
         padding-bottom: 4vw;
         padding-top: 10vw;
         margin: 0vw;
     }
 
-    #properties {
+    #properties, #brokerage {
         padding: 0vw;
     }
     
@@ -168,7 +175,7 @@ p {
         line-height: 20%;
     }
 
-    .profile {
+    .profile, .office {
         display: block; /* Stack the image and text vertically on mobile */
         padding: 0vw;
     }
@@ -182,18 +189,27 @@ p {
         margin: 0 auto; /* Horizontally centers the image */
     }
 
-    .profile-info {
+    .office img {
+        width: 50vw; /* Adjust image size for mobile */
+        height: auto;
+        margin-bottom: 10px; /* Space between image and text */
+        display: block;
+        margin: 0 auto; /* Horizontally centers the image */
+    }
+
+    .profile-info, .office-info {
         max-width: 100%;
         min-width: 100%;
         padding-left: 0vw;
     }
 
-    .profile-info p {
+    .profile-info p, .office-info p {
         width: 100%; /* Make profile-info take almost the full width */
         margin-top: 5vw;
         text-align: justify; /* Align text left for better readability */
         font-size: 4vw; /* Increase text size for mobile */
     }
+
 
     h2  {
         font-size: 6vw;
