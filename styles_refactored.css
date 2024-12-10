@@ -147,15 +147,18 @@ p {
         font-size: 5vw;
     }
 
-    #about, #brokerge {
-        padding-bottom: 4vw;
+    #brokerage {
+        padding-bottom: 0vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    #about, #brokerge, #properties, #contact {
+        padding-bottom: 0vw;
         padding-top: 10vw;
         margin: 0vw;
     }
 
-    #properties, #brokerage {
-        padding: 0vw;
-    }
     
     .property {
         display: block; /* Stack the divs vertically on mobile */
@@ -166,6 +169,7 @@ p {
         font-size: 5vw;
     }
 
+   
     .property p {
         font-size: 3.5vw;
         line-height: 20%;
