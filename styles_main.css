@@ -29,6 +29,11 @@ header h1 {
     text-align: center;
     flex-grow: 1;
     padding-right: 2em;
+    
+}
+
+article h1 {
+    font-size: 2em;
 }
 
 
@@ -290,7 +295,7 @@ p {
 
 
     h2  {
-        font-size: 6vw;
+        font-size: 1.5rem;
         padding: 0vw;
         text-align: center;
     }
