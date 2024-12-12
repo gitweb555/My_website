@@ -218,10 +218,6 @@ p {
         display: block;
     }
 
-    .dropdown input:checked + label + .dropdown-content {
-        display: block
-    }
-
     .dropdown img {
         height: 0.75em;
         width: auto;
