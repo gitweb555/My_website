@@ -36,8 +36,9 @@ header h1 {
     
 }
 
-article h1 {
+article h1  {
     font-size: 2em;
+    text-align: center;
 }
 
 
