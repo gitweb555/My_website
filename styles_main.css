@@ -290,7 +290,7 @@ p {
         padding-left: 0vw;
     }
 
-    .profile-info p, .office-info p {
+    .profile p, .office-info p {
         width: 100%; /* Make profile-info take almost the full width */
         margin-top: 5vw;
         text-align: justify; /* Align text left for better readability */
@@ -360,6 +360,15 @@ p {
         text-align: center;
     }
 
+    .hide-on-small-screen {
+        display: none;
+
 }
 
+}
 
+@media screen and (min-width: 767px) {
+    .hide-on-large-screen {
+      display: none;
+    }
+  }
