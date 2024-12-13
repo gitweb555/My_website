@@ -29,6 +29,10 @@ header h1 {
     text-align: center;
     flex-grow: 1;
     padding-right: 2em;
+    white-space: nowrap;      /* Prevent title from wrapping onto the next line */
+    white-space: nowrap;      /* Prevent title from wrapping onto the next line */
+    overflow: hidden;         /* Hide overflow text */
+    text-overflow: ellipsis;  /* Show "..." if the title overflows */
     
 }
 
